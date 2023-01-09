@@ -14,10 +14,10 @@ function calculateTwenty(event) {
     let ul = document.getElementById("billWithTip");
 
     let twentyP = document.createElement("li");
-    twentyP.textContent = "$" + input * .2
+    twentyP.textContent = "$" + input* .2
   
 
-    ul.append(twentyP);
+    document.getElementById("test").innerText = `${input * .2}`;
 };
 
 function calculateFifteen(event) {
