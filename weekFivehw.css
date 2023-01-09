@@ -1,0 +1,37 @@
+.body {
+    background-color: teal;
+}
+
+.inputBox { text-align: center;
+}
+
+#billWithTip{text-align: center; color: whitesmoke; 
+}
+
+#billWithTip2{text-align: center; color: whitesmoke
+}
+
+#billWithTip3{text-align: center; color: whitesmoke;
+}
+.calculatorImage{
+    display: block;
+    align-content: center;
+    margin-left: 43.3%  ;
+    width: 150px;
+    height: 150px;
+}  
+/* how do i center this image?*/
+
+.service { text-align: center; color: whitesmoke;
+}
+.crab {
+    display: block;
+    align-content: center;
+    margin-left: 30.3%  ;
+    width: 250px;
+    height: 250px;
+}
+
+#submit {
+    text-align: center;
+}
