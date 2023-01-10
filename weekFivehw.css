@@ -5,28 +5,27 @@
 .inputBox { text-align: center;
 }
 
-#billWithTip li span{text-align: center; color: whitesmoke; 
+#billWithTip li {text-align: center; color: whitesmoke; 
 }
 
 .calculatorImage{
     display: block;
-    align-content: center;
-    margin-left: 43.3%  ;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
 }  
-/* how do i center this image?*/
+
 
 .service { text-align: center; color: whitesmoke;
 }
 .crab {
     display: block;
-    align-content: center;
-    margin-left: 30.3%  ;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
 }
 
-#submit {
-    text-align: center;
+.submit {
+    display: flex;
+    justify-content: center;
 }
