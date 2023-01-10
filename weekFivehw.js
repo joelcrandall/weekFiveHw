@@ -28,7 +28,7 @@ function handleButton(event) {
     list.removeChild(list.firstChild);
   }
     if (Number.isNaN(input)) {
-      alert("Please Enter Number");
+      alert("Please Enter Your Total Bill Amount");
       return;
   }
   calculate(input, .25);

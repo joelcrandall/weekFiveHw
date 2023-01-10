@@ -10,8 +10,8 @@
 
 .calculatorImage{
     display: block;
-    width: 250px;
-    height: 250px;
+    width: 75px;
+    height: 75px;
     margin: 0 auto;
 }  
 
@@ -28,4 +28,14 @@
 .submit {
     display: flex;
     justify-content: center;
+}
+
+.seeTotalBill {
+    color: whitesmoke;
+    text-align: center;
+
+}
+
+span {
+    color: greenyellow;
 }

@@ -10,36 +10,40 @@
 </head>
     <style>
         body {background-color: teal;}
-        h1   {color: whitesmoke; text-align: center; border:double; border-color:whitesmoke; padding: 50px; margin-left: 200px; margin-right: 200px;}
+        h1   {text-overflow: ellipsis; color: darkred; text-align: center; border:double; border-color:whitesmoke; padding: 50px; margin-left: 200px; margin-right: 200px; }
         legend { color: whitesmoke; text-align: center; margin-left: 20%;}
         fieldset { color: whitesmoke; text-align: center; margin-left: 20%; margin-right: 20%;}
         h2 { color: whitesmoke; text-align: center;}
+        
     </style>
 
 <body>
-    <h1>JOEL'S SEAFOOD RESTAURANT
+    <h1>JOE'S CRAB SHACK
         <img class = "crab" src ="https://images.getbento.com/accounts/edf5b1bb2b8913719a3af84304d86c2e/media/images/89035joes-crab-shack-logo.png">
     </h1>
-    
     <div class = "inputBox">
         <fieldset>
-            <legend> TIP CALCULATOR</legend>
-    
+            <legend><span> TIP CALCULATOR</span></legend>
+            <br>
+            <img class = "calculatorImage" src="https://m.media-amazon.com/images/I/51WE9SnetkL.png">
+            <br>
         <input id="data" placeholder="Enter Bill Amount Here">
         <button id ="button">Calculate Tip</button>
         <button id = "clearform"> Clear Form</button>
-    </div>
-        <h2>Click on the tip to see total bill</h2>
+    <br>
+    <br>
+        <div class ="seeTotalBill">
+            <b>Hover over to see Total Bill + <span>Tip</span></b>
+        </div>
     <ul style="list-style: none;" id="billWithTip">
         <!-- add a click on tip to display total-->
-        
+    </div>   
     </ul>
         </fieldset><!-- why isnt the ul in the fieldset?-->
         <br>
-        <br>
+    
         
-        <img class = "calculatorImage" src="https://m.media-amazon.com/images/I/51WE9SnetkL.png">
-
+        
         <!-- i want to make the image centered-->
         <script src="weekFivehw.js"></script>
 
@@ -48,7 +52,7 @@
 
         <div class = "service">
         <fieldset>
-            <legend>HOW WAS YOUR SERVICE?</legend>
+            <legend>HOW WAS YOUR <span>SERVICE?</span></legend>
         
             
             <input type="radio" id="excellent" name="service" value="1">
@@ -64,7 +68,7 @@
 <br>
         <div class = "party">
             <fieldset>
-                <legend>HOW MANY PEOPLE IN YOUR PARTY?</legend>
+                <legend>HOW MANY <span>PEOPLE IN YOUR PARTY?</legend>
 
                 <input type="radio" id="1" name="party">
                 <label for ="1">1</label><br>
