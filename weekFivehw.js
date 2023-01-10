@@ -34,7 +34,17 @@ function handleButton(event) {
 let button = document.getElementById("button");
 button.addEventListener("click", handleButton);
 
+function clearForm(event) {
+  let list = document.getElementById('billWithTip');
+  
+  while (list.firstChild) {
+    list.removeChild(list.firstChild);
+  }
+  
+};
 
+let clrButton = document.getElementById("clearform")
+clrButton.addEventListener("click", clearForm);
 
 
 
