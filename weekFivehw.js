@@ -2,7 +2,16 @@ function displayTotal(event) {
   let percentage = Number(event.currentTarget.id);
   let amount = Number(document.getElementById("data").value);
   let total = document.querySelector(".total");
-  total.textContent = `Your total will be $${(amount*percentage + amount).toFixed(2)}`
+  let span = document.createElement("span");
+  total.textContent = `Your total will be `;
+  span.textContent = `$${(amount*percentage + amount).toFixed(2)}`;
+  total.append(span);
+  }
+
+  function removeTotal() {
+    let total = document.querySelector(".total");
+    total.textContent= "";
+
   }
 
 function calculate(amount, percentage) {
@@ -22,6 +31,7 @@ function calculate(amount, percentage) {
 }
 
 function handleButton(event) {
+  removeTotal();
   let input = Number(document.getElementById("data").value);
 
   let list = document.getElementById("billWithTip");
@@ -31,6 +41,7 @@ function handleButton(event) {
     if (Number.isNaN(input)) {
       alert("Please Enter Your Total Bill Amount");
       return;
+
   }
   calculate(input, .25);
   calculate(input, .20);
@@ -44,6 +55,7 @@ button.addEventListener("click", handleButton);
 
 function clearForm(event) {
   let list = document.getElementById('billWithTip');
+  removeTotal();
   
   while (list.firstChild) {
     list.removeChild(list.firstChild);
