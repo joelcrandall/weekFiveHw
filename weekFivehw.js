@@ -22,15 +22,14 @@ function calculate(amount, percentage) {
 
 function handleButton(event) {
   let input = Number(document.getElementById("data").value);
-  if (Number.isNaN(input)) {  
-    alert("Please Enter Number");
-  }
+
   let list = document.getElementById("billWithTip");
   while (list.firstChild) {
     list.removeChild(list.firstChild);
   }
     if (Number.isNaN(input)) {
-      return("$0")
+      alert("Please Enter Number");
+      return;
   }
   calculate(input, .25);
   calculate(input, .20);
