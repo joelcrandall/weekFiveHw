@@ -13,7 +13,7 @@ function calculate(amount, percentage) {
   listItem.append(bold);
 
 
-  span.textContent = "$" + (amount*percentage);
+  span.textContent = "$" + (amount*percentage).toFixed(2);
   list.append(listItem);
 
 }
