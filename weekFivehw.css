@@ -5,7 +5,15 @@
 .inputBox { text-align: center;
 }
 
-#billWithTip li {text-align: center; color: whitesmoke; 
+#billWithTip li{
+    text-align: center;
+    color: whitesmoke;
+    cursor: pointer; 
+    padding: 5px;
+}
+#billWithTip li:hover{
+    text-decoration: underline whitesmoke 1px;
+    text-underline-offset: 2px;
 }
 
 .calculatorImage{
@@ -16,7 +24,7 @@
 }  
 
 
-.service { text-align: center; color: whitesmoke;
+.service, .total{ text-align: center; color: whitesmoke;
 }
 .crab {
     display: block;

@@ -1,4 +1,9 @@
-
+function displayTotal(event) {
+  let percentage = Number(event.currentTarget.id);
+  let amount = Number(document.getElementById("data").value);
+  let total = document.querySelector(".total");
+  total.textContent = `Your total will be $${(amount*percentage + amount).toFixed(2)}`
+  }
 
 function calculate(amount, percentage) {
   let list = document.getElementById("billWithTip");
@@ -7,17 +12,13 @@ function calculate(amount, percentage) {
   let listItem = document.createElement("li");
   let bold = document.createElement("b");
   let span = document.createElement("span");
-  span.id = percentage;
+  listItem.id = percentage;
   bold.innerText = `${percentage*100}% would be: `;
   bold.append(span);
   listItem.append(bold);
-
-
   span.textContent = "$" + (amount*percentage).toFixed(2);
-  
-  
   list.append(listItem);
-
+  listItem.addEventListener("click", displayTotal);
 }
 
 function handleButton(event) {
