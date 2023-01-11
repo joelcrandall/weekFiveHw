@@ -3,6 +3,7 @@
 }
 
 .inputBox { text-align: center;
+
 }
 
 #billWithTip li{
@@ -24,7 +25,9 @@
 }  
 
 
-.service, .total{ text-align: center; color: whitesmoke;
+.service, .total{ 
+    text-align: center;
+    color: whitesmoke;
 }
 .crab {
     display: block;
@@ -46,4 +49,18 @@
 
 span {
     color: greenyellow;
+}
+
+.servicePlate {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.crabParty {
+    display: block;
+    width: 200;
+    height: 150;
+    margin: 0 auto;
 }
