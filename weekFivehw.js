@@ -79,7 +79,7 @@ function submitForm(event) {
     rating.innerText = `You gave us a ${poorBtn.value} rating`;
     rateUs.append(rating);
   }
-  
+
 
 }
 

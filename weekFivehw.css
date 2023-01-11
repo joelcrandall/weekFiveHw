@@ -79,3 +79,14 @@ span {
     height: 150px;
     margin: 0 auto;
 }
+
+#freeform{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.commentSection{
+    text-align: center;
+    color: whitesmoke;
+}
