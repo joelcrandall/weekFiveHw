@@ -75,8 +75,12 @@ function submitForm(event) {
   } else if(parBtn.checked) {
     rating.innerText = `You gave us a ${parBtn.value} rating`;
     rateUs.append(rating);
-  } else {
+  } else if(poorBtn.checked){
+    
     rating.innerText = `You gave us a ${poorBtn.value} rating`;
+    rateUs.append(rating);
+  } else {
+    rating.innerText = `Please Rate Us`;
     rateUs.append(rating);
   }
 
