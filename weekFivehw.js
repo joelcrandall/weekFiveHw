@@ -57,14 +57,42 @@ function clearForm(event) {
   let list = document.getElementById('billWithTip');
   removeTotal();
   
-  while (list.firstChild) {
-    list.removeChild(list.firstChild);
-  }
+
+  clearChildren(list);
   
 };
 
+function submitForm(event) {
+  let rateUs = document.querySelector('.rateUs');
+  let rating = document.createElement('h2');
+  let excellentBtn = document.getElementById('excellent');
+  let parBtn = document.getElementById('par');
+  let poorBtn = document.getElementById('poor');
+  clearChildren(rateUs);
+  if(excellentBtn.checked) {
+    rating.innerText = `You gave us an ${excellentBtn.value} rating.`;
+    rateUs.append(rating);
+  } else if(parBtn.checked) {
+    rating.innerText = `You gave us a ${parBtn.value} rating`;
+    rateUs.append(rating);
+  } else {
+    rating.innerText = `You gave us a ${poorBtn.value} rating`;
+    rateUs.append(rating);
+  }
+  
+
+}
+
+function clearChildren(element) {
+  while (element.firstChild) {
+    element.removeChild(element.firstChild);
+  }
+}
+
 let clrButton = document.getElementById("clearform")
 clrButton.addEventListener("click", clearForm);
+
+
 
 
 
